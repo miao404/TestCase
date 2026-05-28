@@ -1,0 +1,790 @@
+JNI_OnLoad called. JavaVM pointer saved.
+[INFO] [ #281473364128032] 2026-05-28 20:09:45  :>>>>TNELLibrary_initialize call!
+[INFO] [ #281473364128032] 2026-05-28 20:09:49  :>>>>numberOfSegmentsToAllocate: 32768  segmentSize  is  :3000 requestSegmentsTimeout: 30000
+[INFO] [ #281467181592864] 2026-05-28 20:09:57  :>>>> setupStramTask: Source: bid[1]#0 taskType: 1
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>> DoRunRestore starting: Source: bid[1]#0
+ResultPartitionManager::registerResultPartition: 6
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>> OmniTask::DoRunRestore Invokable restore before
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>StreamOperatorFactory operatorID  :org.apache.flink.streaming.api.operators.SourceOperator
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>savepoint: OperatorChainV2 assign operatorId=bc764cd8ddf7a0cff126f51c16239658 name=Source: bid[1] id=org.apache.flink.streaming.api.operators.SourceOperator
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>OperatorDependenciesDeal opMap empty
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>operatorIndex 0 maxParallelism 128 parallelism 2 start 0 end 63
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>Create RocksDBSharedResources in C++. totalMemorySize: 0, writeBufferRatio: 0.5, highPriorityPoolRatio: 0.1, usingPartitionedIndexFilters: 0, calculateCacheCapacity: 0, writeBufferManagerCapacity: 0
+[INFO] [ #281467171107104] 2026-05-28 20:09:57  :>>>>OutputFlusher::run startingSource: bid[1] timeout 100runnning 1
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>The priority queue type of rocksDB backend is HEAP.
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>savepoint: StreamOperatorStateContextImpl::operatorStateBackend backendRestorer embeddedRocksDBStateBackend not null
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>[RocksDB-HEAP-PQ-CP-restore] operatorId=bc764cd8ddf7a0cff126f51c16239658 rawKeyedStateHandles=0
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>restoreGates begin Source: bid[1]
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>SQL scenarios, do not need to restore the channel.
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>> OmniTask::DoRunRestore Invokable restore after
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>find OmniTask initialized, task name: Source: bid[1]#0
+[INFO] [ #281470761464096] 2026-05-28 20:09:57  :>>>>OmniTask::DoRunInvoke welcome to native
+[INFO] [ #281467181592864] 2026-05-28 20:09:57  :>>>>bufferPoolFactoryFunc size :32
+[INFO] [ #281467181592864] 2026-05-28 20:09:57  :>>>>CREATE A LOCAL RECOVERED INPUT CHANNEL#################################
+[INFO] [ #281467181592864] 2026-05-28 20:09:57  :>>>>CREATE A REMOTE RECOVERED INPUT CHANNEL#################################
+[INFO] [ #281467181592864] 2026-05-28 20:09:57  :>>>> setupStramTask: Rank(strategy=[AppendFastStrategy], rankType=[ROW_NUMBER], rankRange=[rankStart=1, rankEnd=10], partitionBy=[auction], orderBy=[price DESC], select=[auction, bidder, price, channel, url, dateTime, extra, w0$o0]) -> ConstraintEnforcer[4] -> nexmark_q19[4]: Writer -> nexmark_q19[4]: Committer#0 taskType: 1
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>> DoRunRestore starting: Rank(strategy=[AppendFastStrategy], rankType=[ROW_NUMBER], rankRange=[rankStart=1, rankEnd=10], partitionBy=[auction], orderBy=[price DESC], select=[auction, bidder, price, channel, url, dateTime, extra, w0$o0]) -> ConstraintEnforcer[4] -> nexmark_q19[4]: Writer -> nexmark_q19[4]: Committer#0
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>> OmniTask::DoRunRestore Invokable restore before
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>StreamOperatorFactory operatorID  :org.apache.flink.streaming.runtime.operators.sink.CommitterOperator
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: OperatorChainV2 assign operatorId=0833ab7cfb55e0f9d51beb847a90b681 name=nexmark_q19[4]: Committer id=org.apache.flink.streaming.runtime.operators.sink.CommitterOperator
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>StreamOperatorFactory operatorID  :org.apache.flink.streaming.runtime.operators.sink.SinkWriterOperator
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: OperatorChainV2 assign operatorId=b8a0447102f8cff5279761acb499c996 name=nexmark_q19[4]: Writer id=org.apache.flink.streaming.runtime.operators.sink.SinkWriterOperator
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>StreamOperatorFactory operatorID  :org.apache.flink.table.runtime.operators.sink.ConstraintEnforcer
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: OperatorChainV2 assign operatorId=cdf5528fc65ae6b8b6b126cfdfcc40dd name=ConstraintEnforcer[4] id=org.apache.flink.table.runtime.operators.sink.ConstraintEnforcer
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>StreamOperatorFactory operatorID  :org.apache.flink.streaming.api.operators.KeyedProcessOperator
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: OperatorChainV2 assign operatorId=20ba6b65f97481d5570070de90e4e791 name=Rank(strategy=[AppendFastStrategy], rankType=[ROW_NUMBER], rankRange=[rankStart=1, rankEnd=10], partitionBy=[auction], orderBy=[price DESC], select=[auction, bidder, price, channel, url, dateTime, extra, w0$o0]) id=org.apache.flink.streaming.api.operators.KeyedProcessOperator
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: KeyedProcessOperator initializeState with initializer, operatorID: 20ba6b65f97481d5570070de90e4e791
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>operatorIndex 0 maxParallelism 128 parallelism 2 start 0 end 63
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>Create RocksDBSharedResources in C++. totalMemorySize: 5840987837, writeBufferRatio: 0.5, highPriorityPoolRatio: 0.1, usingPartitionedIndexFilters: 0, calculateCacheCapacity: 4867489864, writeBufferManagerCapacity: 1946995945
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>The priority queue type of rocksDB backend is HEAP.
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: StreamOperatorStateContextImpl::operatorStateBackend backendRestorer embeddedRocksDBStateBackend not null
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>[RocksDB-HEAP-PQ-CP-restore] operatorId=20ba6b65f97481d5570070de90e4e791 rawKeyedStateHandles=0
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: SinkWriterOperator initializeState with initializer, operatorID: b8a0447102f8cff5279761acb499c996
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>operatorIndex 0 maxParallelism 128 parallelism 2 start 0 end 63
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>Create RocksDBSharedResources in C++. totalMemorySize: 5840987837, writeBufferRatio: 0.5, highPriorityPoolRatio: 0.1, usingPartitionedIndexFilters: 0, calculateCacheCapacity: 4867489864, writeBufferManagerCapacity: 1946995945
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>The priority queue type of rocksDB backend is HEAP.
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: StreamOperatorStateContextImpl::operatorStateBackend backendRestorer embeddedRocksDBStateBackend not null
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>[RocksDB-HEAP-PQ-CP-restore] operatorId=b8a0447102f8cff5279761acb499c996 rawKeyedStateHandles=0
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: KafkaSinkWriterStateHandler createWriter
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: KafkaSinkWriterStateHandler createWriter, create new KafkaWriter
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: CommitterOperator initializeState with initializer, operatorID: 0833ab7cfb55e0f9d51beb847a90b681
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>operatorIndex 0 maxParallelism 128 parallelism 2 start 0 end 63
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>Create RocksDBSharedResources in C++. totalMemorySize: 5840987837, writeBufferRatio: 0.5, highPriorityPoolRatio: 0.1, usingPartitionedIndexFilters: 0, calculateCacheCapacity: 4867489864, writeBufferManagerCapacity: 1946995945
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>The priority queue type of rocksDB backend is HEAP.
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>savepoint: StreamOperatorStateContextImpl::operatorStateBackend backendRestorer embeddedRocksDBStateBackend not null
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>[RocksDB-HEAP-PQ-CP-restore] operatorId=0833ab7cfb55e0f9d51beb847a90b681 rawKeyedStateHandles=0
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>inflight is null:1
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>create OmniStreamTaskNetworkInput
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>create OmniAbstractStreamTaskNetworkInput, task type is:1
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>restoreGates begin Rank(strategy=[AppendFastStrategy], rankType=[ROW_NUMBER], rankRange=[rankStart=1, rankEnd=10], partitionBy=[auction], orderBy=[price DESC], select=[auction, bidder, price, channel, url, dateTime, extra, w0$o0]) -> ConstraintEnforcer[4] -> nexmark_q19[4]: Writer -> nexmark_q19[4]: Committer
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>restoreGates before readOutputData, task=Rank(strategy=[AppendFastStrategy], rankType=[ROW_NUMBER], rankRange=[rankStart=1, rankEnd=10], partitionBy=[auction], orderBy=[price DESC], select=[auction, bidder, price, channel, url, dateTime, extra, w0$o0]) -> ConstraintEnforcer[4] -> nexmark_q19[4]: Writer -> nexmark_q19[4]: Committer
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>restoreGates after readOutputData, task=Rank(strategy=[AppendFastStrategy], rankType=[ROW_NUMBER], rankRange=[rankStart=1, rankEnd=10], partitionBy=[auction], orderBy=[price DESC], select=[auction, bidder, price, channel, url, dateTime, extra, w0$o0]) -> ConstraintEnforcer[4] -> nexmark_q19[4]: Writer -> nexmark_q19[4]: Committer
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>GetInputRescalingDescriptor descriptor size: 0
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>InputRescaling is noRescale.
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>restoreGates before recovery mailbox loop
+Complete future complete!
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>Start to handle event, eventClassName: EndOfChannelStateEvent
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>CheckpointedInputGate::HandleEvent received an EndOfChannelStateEvent.
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>received EndOfChannelStateEvent start, inputIndex=0, channel={"@class":"org.apache.flink.runtime.checkpoint.channel.InputChannelInfo","gateIdx":0,"inputChannelIdx":0}
+Complete future complete!
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>Start to handle event, eventClassName: EndOfChannelStateEvent
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>CheckpointedInputGate::HandleEvent received an EndOfChannelStateEvent.
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>received EndOfChannelStateEvent start, inputIndex=0, channel={"@class":"org.apache.flink.runtime.checkpoint.channel.InputChannelInfo","gateIdx":0,"inputChannelIdx":1}
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>received EndOfChannelStateEvent end, inputIndex=0
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>processInput END_OF_RECOVERY, stop recovery mail box!
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>>>>after isNextLoopPossible
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>restoreGates after recovery mailbox loop
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>restoreGates requestPartitions directly after recovery loop
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>restoreGates complete!
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>> OmniTask::DoRunRestore Invokable restore after
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>find OmniTask initialized, task name: Rank(strategy=[AppendFastStrategy], rankType=[ROW_NUMBER], rankRange=[rankStart=1, rankEnd=10], partitionBy=[auction], orderBy=[price DESC], select=[auction, bidder, price, channel, url, dateTime, extra, w0$o0]) -> ConstraintEnforcer[4] -> nexmark_q19[4]: Writer -> nexmark_q19[4]: Committer#0
+[INFO] [ #281467128836384] 2026-05-28 20:09:57  :>>>>OmniTask::DoRunInvoke welcome to native
+Native byte order is little-endian
+[INFO] [ #281470761464096] 2026-05-28 20:10:02  :>>>>savepoint: OperatorChainV2::CheckpointStreamOperator op type=14SourceOperatorI19KafkaPartitionSplitE
+[INFO] [ #281470761464096] 2026-05-28 20:10:02  :>>>>savepoint: StreamOperatorStateHandler::snapshotState streamOperator type=14SourceOperatorI19KafkaPartitionSplitE
+[INFO] [ #281467137290528] 2026-05-28 20:10:02  :>>>>savepoint:  OperatorStreamStateHandle ToJson {"SourceReaderState":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[233,274,315,356,397,438,479,520,561,602,643,684,725,766,807,848,889,930,971,1012,1053,1094,1135,1176,1217,1258,1299,1340,1381,1422,1463,1504,1545,1586,1627]}}
+[INFO] [ #281467137290528] 2026-05-28 20:10:02  :>>>>savepoint:  OperatorStreamStateHandle ToString {"stateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/e5ad09c1-b287-45c0-99d4-cc7b8d1f5f68"},"stateHandleName":"OperatorStreamStateHandle","stateNameToPartitionOffsets":{"SourceReaderState":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[233,274,315,356,397,438,479,520,561,602,643,684,725,766,807,848,889,930,971,1012,1053,1094,1135,1176,1217,1258,1299,1340,1381,1422,1463,1504,1545,1586,1627]}},"streamStateHandle":{"data":"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","handleName":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/e5ad09c1-b287-45c0-99d4-cc7b8d1f5f68","stateHandleName":"ByteStreamStateHandle","stateSize":1668,"streamStateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/e5ad09c1-b287-45c0-99d4-cc7b8d1f5f68"}}}
+Complete future complete!
+[INFO] [ #281467128836384] 2026-05-28 20:10:10  :>>>>Start to handle event, eventClassName: CheckpointBarrier
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>Start to handle event, eventClassName: CheckpointBarrier
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: OperatorChainV2::CheckpointStreamOperator op type=17CommitterOperatorI16KafkaCommittableE
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: StreamOperatorStateHandler::snapshotState streamOperator type=17CommitterOperatorI16KafkaCommittableE
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: OperatorChainV2::CheckpointStreamOperator op type=18SinkWriterOperator
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: StreamOperatorStateHandler::snapshotState streamOperator type=18SinkWriterOperator
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: OperatorChainV2::CheckpointStreamOperator op type=18ConstraintEnforcer
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: OperatorChainV2::CheckpointStreamOperator StreamOperator::SnapshotState
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: OperatorChainV2::CheckpointStreamOperator op type=20KeyedProcessOperatorIP7RowDataS1_S1_E
+[INFO] [ #281467128836384] 2026-05-28 20:10:24  :>>>>savepoint: StreamOperatorStateHandler::snapshotState streamOperator type=20KeyedProcessOperatorIP7RowDataS1_S1_E
+Complete future complete!
+[INFO] [ #281465707229472] 2026-05-28 20:10:25  :>>>>savepoint:  OperatorStreamStateHandle ToJson {"streaming_committer_raw_states":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[246]}}
+[INFO] [ #281465707229472] 2026-05-28 20:10:25  :>>>>savepoint:  OperatorStreamStateHandle ToString {"stateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/0b174802-3469-4b82-bab7-ef84ee43dfee"},"stateHandleName":"OperatorStreamStateHandle","stateNameToPartitionOffsets":{"streaming_committer_raw_states":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[246]}},"streamStateHandle":{"data":"AAAABQABAB5zdHJlYW1pbmdfY29tbWl0dGVyX3Jhd19zdGF0ZXMAAAABAAAAAQAgT1BFUkFUT1JfU1RBVEVfRElTVFJJQlVUSU9OX01PREUAEFNQTElUX0RJU1RSSUJVVEUAAAABABBWQUxVRV9TRVJJQUxJWkVSAAAAAgByb3JnLmFwYWNoZS5mbGluay5hcGkuY29tbW9uLnR5cGV1dGlscy5iYXNlLmFycmF5LkJ5dGVQcmltaXRpdmVBcnJheVNlcmlhbGl6ZXIkQnl0ZVByaW1pdGl2ZUFycmF5U2VyaWFsaXplclNuYXBzaG90AAAAAwAAAAAAFAAAAAIAAAAMuR8lLAAAAAAAAAAA","handleName":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/0b174802-3469-4b82-bab7-ef84ee43dfee","stateHandleName":"ByteStreamStateHandle","stateSize":270,"streamStateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/0b174802-3469-4b82-bab7-ef84ee43dfee"}}}
+[INFO] [ #281465707229472] 2026-05-28 20:10:25  :>>>>savepoint:  OperatorStreamStateHandle ToJson {"writer_raw_states":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[233]}}
+[INFO] [ #281465707229472] 2026-05-28 20:10:25  :>>>>savepoint:  OperatorStreamStateHandle ToString {"stateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/9dda8194-7706-4ba6-9cc4-8b2f275c143e"},"stateHandleName":"OperatorStreamStateHandle","stateNameToPartitionOffsets":{"writer_raw_states":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[233]}},"streamStateHandle":{"data":"AAAABQABABF3cml0ZXJfcmF3X3N0YXRlcwAAAAEAAAABACBPUEVSQVRPUl9TVEFURV9ESVNUUklCVVRJT05fTU9ERQAQU1BMSVRfRElTVFJJQlVURQAAAAEAEFZBTFVFX1NFUklBTElaRVIAAAACAHJvcmcuYXBhY2hlLmZsaW5rLmFwaS5jb21tb24udHlwZXV0aWxzLmJhc2UuYXJyYXkuQnl0ZVByaW1pdGl2ZUFycmF5U2VyaWFsaXplciRCeXRlUHJpbWl0aXZlQXJyYXlTZXJpYWxpemVyU25hcHNob3QAAAADAAAAAAAUAAAAAQAAAAwACmthZmthLXNpbms=","handleName":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/9dda8194-7706-4ba6-9cc4-8b2f275c143e","stateHandleName":"ByteStreamStateHandle","stateSize":257,"streamStateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-1/9dda8194-7706-4ba6-9cc4-8b2f275c143e"}}}
+Complete future complete!
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281467183690016] 2026-05-28 20:10:26  :>>>>savepoint: OmniTask notifyCheckpointComplete: 1
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281467183690016] 2026-05-28 20:10:26  :>>>>savepoint: OmniTask notifyCheckpoint: -1
+[INFO] [ #281467183690016] 2026-05-28 20:10:26  :>>>>savepoint: OmniTask notifyCheckpoint: -1
+[INFO] [ #281467183690016] 2026-05-28 20:10:26  :>>>>savepoint: OmniTask notifyCheckpointComplete: 1
+[INFO] [ #281467183690016] 2026-05-28 20:10:26  :>>>>savepoint: OmniTask notifyCheckpoint: -1
+[INFO] [ #281467183690016] 2026-05-28 20:10:26  :>>>>savepoint: OmniTask notifyCheckpoint: -1
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470761464096] 2026-05-28 20:10:26  :>>>>savepoint: SourceOperator notifyCheckpointComplete 1
+[INFO] [ #281470761464096] 2026-05-28 20:10:26  :>>>>savepoint: rocksdbKeyedStateBackend notifyCheckpointComplete
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:26  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:27  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>NO BUFFER AVAILABLE, waiting for 2000 ms serializedBatchQueue:: 423  pointer = 281467259297056
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:28  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:29  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>NO BUFFER AVAILABLE, waiting for 2000 ms serializedBatchQueue:: 423  pointer = 281467259297056
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:30  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:31  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470761464096] 2026-05-28 20:10:32  :>>>>savepoint: OperatorChainV2::CheckpointStreamOperator op type=14SourceOperatorI19KafkaPartitionSplitE
+[INFO] [ #281470761464096] 2026-05-28 20:10:32  :>>>>savepoint: StreamOperatorStateHandler::snapshotState streamOperator type=14SourceOperatorI19KafkaPartitionSplitE
+[INFO] [ #281465849901344] 2026-05-28 20:10:32  :>>>>savepoint:  OperatorStreamStateHandle ToJson {"SourceReaderState":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[233,274,315,356,397,438,479,520,561,602,643,684,725,766,807,848,889,930,971,1012,1053,1094,1135,1176,1217,1258,1299,1340,1381,1422,1463,1504,1545,1586,1627]}}
+[INFO] [ #281465849901344] 2026-05-28 20:10:32  :>>>>savepoint:  OperatorStreamStateHandle ToString {"stateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-2/c72ca7d0-0085-433c-ab5c-6595a9aac40d"},"stateHandleName":"OperatorStreamStateHandle","stateNameToPartitionOffsets":{"SourceReaderState":{"distributionMode":"SPLIT_DISTRIBUTE","offsets":[233,274,315,356,397,438,479,520,561,602,643,684,725,766,807,848,889,930,971,1012,1053,1094,1135,1176,1217,1258,1299,1340,1381,1422,1463,1504,1545,1586,1627]}},"streamStateHandle":{"data":"AAAABQABABFTb3VyY2VSZWFkZXJTdGF0ZQAAAAEAAAABACBPUEVSQVRPUl9TVEFURV9ESVNUUklCVVRJT05fTU9ERQAQU1BMSVRfRElTVFJJQlVURQAAAAEAEFZBTFVFX1NFUklBTElaRVIAAAACAHJvcmcuYXBhY2hlLmZsaW5rLmFwaS5jb21tb24udHlwZXV0aWxzLmJhc2UuYXJyYXkuQnl0ZVByaW1pdGl2ZUFycmF5U2VyaWFsaXplciRCeXRlUHJpbWl0aXZlQXJyYXlTZXJpYWxpemVyU25hcHNob3QAAAADAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAARAAAAAAADDlyAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAAA8AAAAAAAMNrIAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAAJwAAAAAAApmcgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAAhAAAAAAADCsKAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAAEUAAAAAAAKT2IAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAAAwAAAAAAAw22gAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAAXAAAAAAADAh6AAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAADEAAAAAAAKRHYAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAAHQAAAAAAAv+VgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAABBAAAAAAACkheAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAAEMAAAAAAAKTXIAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAACQAAAAAAAwHRgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAAjAAAAAAACnr+AAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAADcAAAAAAAKSgoAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAAMwAAAAAAApHmgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAAlAAAAAAACm82AAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAADUAAAAAAAKR6IAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAAHwAAAAAAAvTIgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAA7AAAAAAACj6qAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAABkAAAAAAAMMfoAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAABwAAAAAAAwx/gAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAA5AAAAAAACk4yAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAACsAAAAAAAMLTIAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAAPwAAAAAAApUFgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAABAAAAAAAC/BmAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAAC8AAAAAAAMOEYAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAADQAAAAAAAwA5gAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAA9AAAAAAAClBqAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAACkAAAAAAAMNPoAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAALQAAAAAAAwCVgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAAbAAAAAAAC/PaAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAABMAAAAAAAMOhoAAAAAAAAAAAAAAJQAAAAAAAAAdAAdiaWQtcHlqAAAABQAAAAAAAw2dgAAAAAAAAAAAAAAlAAAAAAAAAB0AB2JpZC1weWoAAAALAAAAAAAC/FaAAAAAAAAAAAAAACUAAAAAAAAAHQAHYmlkLXB5agAAABUAAAAAAAMIkIAAAAAAAAAA","handleName":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-2/c72ca7d0-0085-433c-ab5c-6595a9aac40d","stateHandleName":"ByteStreamStateHandle","stateSize":1668,"streamStateHandleID":{"@class":"org.apache.flink.runtime.state.PhysicalStateHandleID","keyString":"file:/home/data/checkpoint/9a02e79acf79b2eae35ac143af367345/chk-2/c72ca7d0-0085-433c-ab5c-6595a9aac40d"}}}
+Complete future complete!
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>NO BUFFER AVAILABLE, waiting for 2000 ms serializedBatchQueue:: 423  pointer = 281467259297056
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:32  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
+[INFO] [ #281470214074656] 2026-05-28 20:10:33  :>>>>OmniCreditBasedSequenceNumberingViewReader sleep time: 10
